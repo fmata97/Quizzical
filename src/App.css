@@ -1,0 +1,164 @@
+.App {
+    background-color: #F5F7FB;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.Start {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-family: Inter, sans-serif;
+    color: #293264;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Start h1 {
+    font-family: Karla, sans-serif;
+    font-size: 4.5rem;
+}
+
+.Start h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.Start button {
+    font-size: 1.3rem;
+    width: 12rem;
+    height: 3rem;
+    margin-top: 2rem;
+}
+
+.Start-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+button {
+    background-color: #4D5B9E;
+    border-radius: 1rem;
+    border-width: 0px;
+    border-color: transparent;
+    border-style: solid;
+    color: #F5F7FB;
+    min-width: 6rem;
+    min-height: 2rem;
+    font-family: Inter, sans-serif;
+    cursor: pointer;
+}
+
+
+hr {
+    background-color: #DBDEF0;
+    height: 1px;
+    border: none;
+    margin: 20px 0px;
+}
+
+.Game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #293264;
+}
+
+.Game-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.Question {
+    width: 60vw;
+}
+
+.Question > h2 {
+    font-family: Karla, sans-serif;
+    font-size: 1.8rem;
+}
+
+.answer-button {
+    margin: 10px 20px 0px 0px;
+    background-color: transparent;
+    color: #293264;
+    border-width: 2px;
+    border-radius: 0.8rem;
+    border-color: #4D5B9E;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.answer-button.selected {
+    background-color: #D6DBF5;
+    border-color: #D6DBF5;
+}
+
+.answer-button.wrong {
+    background-color: #F8BCBC;
+    border-color: #F8BCBC;
+}
+
+.answer-button.correct {
+    background-color: #94D7A2;
+    border-color: #94D7A2;
+}
+
+.answer-button:hover {
+    background-color: #D6DBF5;
+}
+
+.transparent {
+    opacity: 60%;
+}
+
+.Game-button {
+    width: 12rem;
+    height: 3rem;
+    border-radius: 0.8rem;
+    font-size: 1.3rem;
+}
+
+
+.blob {
+    z-index: 0;
+}
+
+.blob-medium-blue {
+    position: absolute;
+    width: 400px;
+    height: 290px;
+    left: -160px;
+    bottom: -60px;
+}
+
+.blob-large-yellow {
+    position: absolute;
+    width: 50rem;
+    height: 40rem;
+    right: -250px;
+    top: -100px;
+}
+
+.blob-medium-yellow {
+    position: absolute;
+    width: 30rem;
+    height: 20rem;
+    right: -250px;
+    top: -100px;
+}
+
+.blob-small-blue {
+
+}

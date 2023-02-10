@@ -1,14 +1,16 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import Start from './components/Start'
+import Game from './components/Game'
 import './App.css'
 
 function App() {
 
-  return (
-    <div className="App">
-      
-    </div>
-  )
+    return (
+        <div className="App">
+            {/* <Start /> */}
+            <Game />
+        </div>
+    )
 }
 
 export default App
