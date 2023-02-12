@@ -1,17 +1,32 @@
 import React from "react";
 
-export default function Question({ question, answers, lockedAnswer, selectAnswer }) {
+export default function Question(props) {
+
+    const { question, correctAnswer, answers, lockedAnswer, selectAnswer, revealAnswers } = props;
 
     const buttonElements =
         answers ?
-            answers.map((answer, index) =>
-                <button
-                    key={index}
-                    className={`answer-button ${answer === lockedAnswer ? "selected" : ""}`}
-                    onClick={() => selectAnswer(answer)}
-                >
-                    {answers[index]}
-                </button>
+            answers.map((answer, index) => {
+                let className = `answer-button `;
+                if (revealAnswers) {  // quiz submitted
+                    if (answer === correctAnswer)
+                        className += `correct`;
+                    else if (answer === lockedAnswer)
+                        className += `wrong transparent`;
+                } else {  // still answering the quiz
+                    className += `${answer === lockedAnswer ? "selected" : ""}`
+                }
+
+                return (
+                    <button
+                        key={index}
+                        className={className}
+                        onClick={() => selectAnswer(answer)}
+                    >
+                        {answers[index]}
+                    </button>
+                )
+            }
 
             )
             : <h2>Loading...</h2>
