@@ -6,3 +6,13 @@
 - The questions are fetched from [Open Trivia DB](https://opentdb.com/api_config.php) .
 
 - Mobile view isn't **yet** supported.
+
+Image examples:
+
+![start-menu](./imgs/start-menu.png "Start Menu")
+<hr/>
+
+![questions](./imgs/questions.png "Questions")
+<hr/>
+
+![answers](./imgs/answers.png "Answers")
