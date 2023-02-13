@@ -5,10 +5,16 @@ import './App.css'
 
 function App() {
 
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    function startTransition() {
+        setIsPlaying(true);
+    }
+
     return (
         <div className="App">
-            {/* <Start /> */}
-            <Game />
+            {!isPlaying && <Start onStart={startTransition} />}
+            {isPlaying && <Game />}
         </div>
     )
 }

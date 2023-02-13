@@ -1,3 +1,5 @@
+vite.config.js.timestamp*
+
 # Logs
 logs
 *.log

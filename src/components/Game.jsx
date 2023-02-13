@@ -93,7 +93,7 @@ export default function Game() {
 
 
     return (
-        <div className="Game">
+        <div className="Game fade-in">
             <div className="Game-main">
                 {questionsElements}
                 <div className="button-section">
