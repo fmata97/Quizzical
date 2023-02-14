@@ -5,6 +5,10 @@
     -webkit-user-drag: none;
 }
 
+body {
+    height: 100vh;
+}
+
 a {
     color: inherit;
 }
