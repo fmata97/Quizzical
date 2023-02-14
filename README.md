@@ -5,7 +5,7 @@
 
 - The questions are fetched from [Open Trivia DB](https://opentdb.com/api_config.php) .
 
-- Mobile view isn't **yet** supported.
+- Mobile view is supported.
 
 Image examples:
 
